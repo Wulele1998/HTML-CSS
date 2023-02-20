@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3</title>
+    <style>
+      div > h1 {
+        color: green;
+        font-size: 30px;
+      }
+
+      div p {
+        color: aqua;
+      }
+
+      span + h2 {
+        color: red;
+      }
+
+      span ~ h3 {
+        color: purple;
+      }
+
+      p[title="first"] {
+        color: blue;
+        font-size: 20px;
+      }
+
+      p[title^="sec"] {
+        color: fuchsia;
+      }
+
+      p[title$="th"] {
+        color: salmon;
+      }
+
+      ul > li:first-child {
+        color: greenyellow;
+      }
+
+      ul > li:last-child {
+        color: seagreen;
+      }
+
+      ul > li:nth-child(3) {
+        color: hotpink;
+      }
+
+      ul > span:first-of-type {
+        font-size: 20px;
+      }
+
+      #box {
+        color: gray;
+        font-size: 30px;
+      }
+
+      #box::first-letter {
+        font-size: 50px;
+        color: aqua
+      }
+
+      #box::first-line {
+        background-color: white;
+      }
+
+      .quote::before {
+        content: "<<<";
+      }
+    
+      .quote::after {
+        content: ">>>"
+      }
+      
+      .quote::selection {
+        background-color: aqua;
+        color: blueviolet;
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>This is the P tag in the div</p>
+      <p>This is the P tag in the div</p>
+      <h1>This is the h1 tag in the div</h1>
+      <span>
+        <p>This is the P tag in the span which is in the div</p>
+      </span>
+      <h2>This is the h2 tag next to the span tag</h2>
+      <h2>This is the h2 tag next to the span tag</h2>
+      <h2>This is the h2 tag next to the span tag</h2>
+      <h3>This is the h3 tag next to the span tag</h3>
+      <h3>This is the h3 tag next to the span tag</h3>
+      <h3>This is the h3 tag next to the span tag</h3>
+    </div>
+
+    <p title="first">The first P tag</p>
+    <p title="second">The second P tag</p>
+    <p title="third">The third P tag</p>
+    <p title="forth">The forth P tag</p>
+    <p>The fifth P tag</p>
+
+    <ul>
+      <li>Good</li>
+      <span>Hello</span>
+      <li>Hello</li>
+      <li>World</li>
+      <li>China</li>
+      <li>USA</li>
+      <li>UK</li>
+      <li>France</li>
+    </ul>
+
+    <p id="box">Hello World</p>
+    <p class="quote">Where there is a will, there is the way</p>
+  </body>
+</html>

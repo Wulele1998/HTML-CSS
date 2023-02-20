@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 2</title>
+    <link rel="stylesheet" href="../css/lesson.css" />
+    <style>
+      /* Internal CSS */
+      ol {
+        color: blue;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline CSS (not recommended)-->
+    <ul style="color: red; font-size: 20px">
+      <li>Apple</li>
+      <li>Peach</li>
+      <li>Banana</li>
+    </ul>
+    <ol>
+      <li>Apple</li>
+      <li>Peach</li>
+      <li>Banana</li>
+    </ol>
+    <a href="https://www.google.com/" target="_self">Hyperlink Self</a>
+    <br />
+    <br />
+    <a href="https://www.google.com" target="_blank">Hyperlink Blank</a>
+    <br />
+    <br />
+    <a href="#bottom">Go to bottom</a>
+    <br />
+    <br />
+    <a id="bottom" href="#">Go to top</a>
+    <br />
+    <br />
+    <!-- javascript: void(0) / javascript: ; -->
+    <a href="javascript: void(0)">Nothing happens</a>
+    <br />
+    <br />
+    <!-- most browser disabled autoplay -->
+    <audio src="../static/audio/FlowerDance.mp3" controls></audio>
+    <br />
+    <br />
+    <!-- source from outside -->
+    <audio controls>
+      Please upgrade your browser version!
+      <source src="../static/audio/FlowerDance.mp3" />
+    </audio>
+
+    <p>I love the song</p>
+    <p>I like playing piano</p>
+  </body>
+</html>
