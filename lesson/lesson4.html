@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Lesson 4</title>
     <style>
-      p {
-        color: red;
-        background-color: blanchedalmond;
-      }
+        p {
+            color: red;
+            background-color: blanchedalmond;
+        }
 
-      /* the order is important */
-      /* visited => hover => active */
-      a:visited {
-        color: aqua;
-      }
+        /* the order is important */
+        /* visited => hover => active */
+        a:visited {
+            color: aqua;
+        }
 
-      a:hover {
-        color: red;
-        font-size: 30px;
-      }
+        a:hover {
+            color: red;
+            font-size: 30px;
+        }
 
-      a:active {
-        color: greenyellow;
-        font-size: 20px;
-      }
+        a:active {
+            color: greenyellow;
+            font-size: 20px;
+        }
 
-      .box1 {
-        width: 300px;
-        height: 300px;
-        background-color: green;
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: green;
 
-        border-color: red;
-        /* 4 param: top right bottom left */
-        border-width: 10px 20px 30px 40px;
-        border-style: solid;
+            border-color: red;
+            /* 4 param: top right bottom left */
+            border-width: 10px 20px 30px 40px;
+            border-style: solid;
 
-        padding: 20px;
+            padding: 20px;
 
-        margin: 20px;
-      }
+            margin: 20px;
+        }
 
-      .box2 {
-        width: 50%;
-        height: 50%;
-        background-color: aqua;
-        border: 5px orange dotted;
-      }
+        .box2 {
+            width: 50%;
+            height: 50%;
+            background-color: aqua;
+            border: 5px orange dotted;
+        }
 
-      .box3 {
-        width: 10em;
-        height: 10em;
-        font-size: 30px;
-        background-color: blueviolet;
+        .box3 {
+            width: 10em;
+            height: 10em;
+            font-size: 30px;
+            background-color: blueviolet;
 
-        border-color: blue;
-        /* 3 param: top left, right bottom */
-        border-width: 10px 20px 30px;
-        border-style: solid;
-      }
+            border-color: blue;
+            /* 3 param: top left, right bottom */
+            border-width: 10px 20px 30px;
+            border-style: solid;
+        }
 
-      /* rem is based on the font-size of the root */
-      html {
-        font-size: 30px;
-      }
+        /* rem is based on the font-size of the root */
+        html {
+            font-size: 30px;
+        }
 
-      .box4 {
-        width: 10rem;
-        height: 10rem;
-        background-color: yellowgreen;
+        .box4 {
+            width: 10rem;
+            height: 10rem;
+            background-color: yellowgreen;
 
-        border-color: yellow;
-        /* 2 param: top, bottom  left, right */
-        border-width: 10px 20px;
-        border-style: solid;
-      }
+            border-color: yellow;
+            /* 2 param: top, bottom  left, right */
+            border-width: 10px 20px;
+            border-style: solid;
+        }
     </style>
-  </head>
-  <body>
-    <p>
-      This is a P tag
-      <br />
-      <br />
-      <!-- the style of span will inherit from p -->
-      <span>This is a Spam tag in the P tag</span>
-    </p>
-    <a href="https://www.google.com" target="_blank">Go to Google</a>
+</head>
+<body>
+<p>
+    This is a P tag
+    <br/>
+    <br/>
+    <!-- the style of span will inherit from p -->
+    <span>This is a Spam tag in the P tag</span>
+</p>
+<a href="https://www.google.com" target="_blank">Go to Google</a>
 
-    <div class="box1">
-      <div class="box2"></div>
-    </div>
+<div class="box1">
+    <div class="box2"></div>
+</div>
 
-    <div class="box3"></div>
-    <div class="box4"></div>
-  </body>
+<div class="box3"></div>
+<div class="box4"></div>
+</body>
 </html>

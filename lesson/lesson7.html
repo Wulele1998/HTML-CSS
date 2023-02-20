@@ -1,101 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>lesson 7</title>
     <style>
-      .outside {
-        border: 5px red solid;
-        /* open BFC (Block Formatting Context) */
-        overflow: hidden;
-      }
+        .outside {
+            border: 5px red solid;
+            /* open BFC (Block Formatting Context) */
+            overflow: hidden;
+        }
 
-      .inside {
-        width: 100px;
-        height: 100px;
-        background-color: yellow;
-        border: 2px black dotted;
-        float: left;
-      }
+        .inside {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 2px black dotted;
+            float: left;
+        }
 
-      .box {
-        height: 300px;
-        width: 300px;
-        background-color: blue;
-      }
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+        }
 
-      .box1 {
-        border: 2px red solid;
-      }
+        .box1 {
+            border: 2px red solid;
+        }
 
-      .box2 {
-        width: 100px;
-        height: 100px;
-        background-color: aqua;
-        float: left;
-      }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            float: left;
+        }
 
-      /* after is a inline element */
-      .box1::after {
-        clear: both;
-        /* change the inline element to block element */
-        display: block;
-        content: "";
-      }
+        /* after is a inline element */
+        .box1::after {
+            clear: both;
+            /* change the inline element to block element */
+            display: block;
+            content: "";
+        }
 
-      .box-border {
-        border: 5px greenyellow solid;
-      }
+        .box-border {
+            border: 5px greenyellow solid;
+        }
 
-      .box3 {
-        width: 200px;
-        height: 200px;
-        background-color: bisque;
-        /* using float for horizontal layout */
-        float: left;
-      }
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            /* using float for horizontal layout */
+            float: left;
+        }
 
-      .box4 {
-        width: 100px;
-        height: 100px;
-        background-color: orange;
-        margin-top: 100px;
-      }
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin-top: 100px;
+        }
 
-      .clearfix::before,
-      .clearfix::after {
-        content: "";
-        display: table;
-        clear: both;
-      }
+        .clearfix::before,
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
-  </head>
-  <body>
-    <div class="outside">
-      <div class="inside"></div>
-      <div class="inside"></div>
-      <div class="inside"></div>
-      <div class="inside"></div>
-      <div class="inside"></div>
-    </div>
-    <div class="box"></div>
-    <br />
+</head>
+<body>
+<div class="outside">
+    <div class="inside"></div>
+    <div class="inside"></div>
+    <div class="inside"></div>
+    <div class="inside"></div>
+    <div class="inside"></div>
+</div>
+<div class="box"></div>
+<br/>
 
-    <div class="box1">
-      <div class="box2"></div>
-      <div class="box2"></div>
-    </div>
-    <br />
+<div class="box1">
+    <div class="box2"></div>
+    <div class="box2"></div>
+</div>
+<br/>
 
-    <div class="box-border clearfix">
-      <div class="box3">
+<div class="box-border clearfix">
+    <div class="box3">
         <div class="box4"></div>
-      </div>
-      <div class="box3">
-        <div class="box4"></div>
-      </div>
     </div>
-  </body>
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+</div>
+</body>
 </html>

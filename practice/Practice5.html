@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8"/>
+    <title>Practice 5 on table tag</title>
+    <style>
+        table {
+            border: 1px solid black;
+            width: 1000px;
+            margin: auto;
+        }
+
+        tr th {
+            background-color: lightgray;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        iframe {
+            width: 900px;
+            height: 600px;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-$END$
+<table>
+    <tr>
+        <th>Skill</th>
+        <th>Trigger</th>
+        <th>Attribute</th>
+        <th>Effect</th>
+    </tr>
+    <tr>
+        <td>Tough</td>
+        <td>Passive</td>
+        <td colspan="2">
+            If Galen does not take any wounded words for 9 seconds, he will return
+            10.4% of his maximum life for the following seconds. Damage from
+            minions does not interrupt the toughness effect.
+        </td>
+    </tr>
+    <tr>
+        <td>Deadly Blow</td>
+        <td>Q</td>
+        <td>Cooling time: 8</td>
+        <td>
+            Galen removes all slowing effects from his body and gains a 30%
+            movement speed bonus for 1 second
+        </td>
+    </tr>
+</table>
+
+<div>
+    <iframe src="https://en.wikipedia.org/wiki/Tufts_University"></iframe>
+</div>
 </body>
 </html>
